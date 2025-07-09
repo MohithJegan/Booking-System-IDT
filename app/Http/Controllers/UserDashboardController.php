@@ -9,6 +9,7 @@ class UserDashboardController extends Controller
 {
     public function index()
     {
+        // get items
         $items = Auth::user()->item;
 
         return view('user.dashboard', compact('items'));
