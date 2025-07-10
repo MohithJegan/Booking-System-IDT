@@ -11,6 +11,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// Static Pages
+Route::view('/', 'pages.home')->name('home');
+Route::view('/about-us', 'pages.about-us')->name('about');
+Route::view('/privacy-policy', 'pages.privacy-policy')->name('privacy');
+Route::view('/terms-and-conditions', 'pages.terms-conditions')->name('terms');
+Route::view('/services', 'pages.services')->name('services');
+
 // Role-based Dashboard Redirect
 Route::get('/dashboard', function () {
     $user = Auth::user();
