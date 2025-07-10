@@ -1,4 +1,4 @@
-<x-app-layout>
+
     <h1>User Dashboard</h1>
     <p>Welcome {{ auth()->user()->first_name }}</p>
 
@@ -20,4 +20,3 @@
 @endif
 
 
-</x-app-layout>
